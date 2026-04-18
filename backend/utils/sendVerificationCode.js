@@ -5,7 +5,7 @@ export async function sendVerificationCode(verificationCode, email, res) {
         const message = generateVerificationOtpEmailTemplate(verificationCode);
         sendEmail({
             email,
-            subject: "Verification code(Bookworm Library management system)",
+            subject: "Verification code(OUTR Library management syste)",
             message,
         });
         res.status(200).json({

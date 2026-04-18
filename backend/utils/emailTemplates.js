@@ -14,7 +14,7 @@ ${otpCode}
 <p style="font-size: 16px; color: #ccc;">This code is valid for 15 minutes. Please do not share this code with anyone .< /p>
 <p style="font-size: 16px; color: #ccc;">If you did not request this email, please ignore it .< /p>
 <footer style="margin-top: 20px; text-align: center; font-size: 14px; color: #666;">
-<p>Thank you, <br>BookWorm Team</p>
+<p>Thank you, <br>OUTR Library System .</p>
 <p style="font-size: 12px; color: #444;">This is an automated message. Please do not reply to this email .< /p>
 </footer>
 </div>`;
@@ -27,7 +27,7 @@ export function generateForgotPasswordEmailTemplate(name, resetPasswordUrl) {
         <p style="font-size: 16px; color: #ccc;">Dear ${name},</p>
         
         <p style="font-size: 16px; color: #ccc; line-height: 1.6;">
-            We received a request to reset your password for your <strong>BookWorm</strong> account. Please click the button below to choose a new one:
+            We received a request to reset your password for your <strong>OUTR Library System</strong> account. Please click the button below to choose a new one:
         </p>
 
         <div style="text-align: center; margin: 35px 0;">
@@ -50,8 +50,8 @@ export function generateForgotPasswordEmailTemplate(name, resetPasswordUrl) {
         </p>
 
         <footer style="margin-top: 40px; text-align: center; border-top: 1px solid #222; padding-top: 20px;">
-            <p style="font-size: 14px; color: #666; margin-bottom: 4px;">Thank you, <br><strong>BookWorm Team</strong></p>
-            <p style="font-size: 11px; color: #444; letter-spacing: 1px;">&copy; 2026 BOOKWORM INC. ALL RIGHTS RESERVED.</p>
+            <p style="font-size: 14px; color: #666; margin-bottom: 4px;">Thank you, <br><strong>OUTR Library System Team</strong></p>
+            <p style="font-size: 11px; color: #444; letter-spacing: 1px;">&copy; 2026 OUTR Library System INC. ALL RIGHTS RESERVED.</p>
         </footer>
     </div>`;
 }

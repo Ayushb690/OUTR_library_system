@@ -5,7 +5,7 @@ import ErrorHandler from "../middlewares/errorMiddlewares.js";
 // import express from "express";
 
 export const addBook = catchAsyncErrors(async (req, res, next) => {
-    const { title, author, description, price, quantity ,availability} = req.body;
+    const { title, author, description, price, quantity, availability } = req.body;
     if (!title || !author || !description || !price || !quantity) {
         return next(new ErrorHandler("please fill all the Fields.", 400));
     }
@@ -32,7 +32,7 @@ export const getAllBooks = catchAsyncErrors(async (req, res, next) => {
 });
 export const deleteBook = catchAsyncErrors(async (req, res, next) => {
     const { id } = req.params;
-    const book = await Book.findById(req.body.bookId);
+    const book = await Book.findById(req.params.id);
     if (!book) {
         return next(new ErrorHandler("Book not Found.", 404));
     }
